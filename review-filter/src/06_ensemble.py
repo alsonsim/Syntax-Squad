@@ -25,6 +25,19 @@ if not model_path.exists():
     raise FileNotFoundError("Missing TF-IDF model. Run 03_train_tfidf_lr.py first.")
 clf = joblib.load(model_path)
 
+# get class ids the model actually learned (e.g., array([0,2]))
+classes = clf.named_steps["clf"].classes_
+NUM_ALL = 4
+
+def expand_proba(p_row, classes):
+    out = np.zeros(NUM_ALL, dtype=float)
+    for i, cls in enumerate(classes):
+        out[int(cls)] = p_row[i]
+    # if no prob mass assigned (edge case), fallback to uniform
+    if out.sum() == 0:
+        out[:] = 1.0 / NUM_ALL
+    return out
+
 # rules (return class id or None)
 ADS_PAT       = re.compile(r"(http|www|promo|discount|use code|follow\s*@)", re.I)
 NO_VISIT_PAT  = re.compile(r"(never been|haven't been|didn't go|won't go|heard it(?:'s| is))", re.I)
@@ -37,22 +50,21 @@ def rule_label(text: str):
     if IRREL_PAT.search(t):     return 2
     return None
 
-NUM_CLASSES = 4
-
-def onehot(label, k=NUM_CLASSES):
-    v = np.zeros(k, dtype=float)
+def onehot(label):
+    v = np.zeros(NUM_ALL, dtype=float)
     if label is not None:
         v[int(label)] = 1.0
     return v
 
 # predict
 texts = df["text"].astype(str).tolist()
-proba_tfidf = clf.predict_proba(texts)  # shape [n,4]
-proba_rules = np.vstack([onehot(rule_label(t)) for t in texts])
+proba_raw = clf.predict_proba(texts)          # shape [n, len(classes)]
+proba_tf  = np.vstack([expand_proba(p, classes) for p in proba_raw])  # [n,4]
+proba_ru  = np.vstack([onehot(rule_label(t)) for t in texts])         # [n,4]
 
-# soft vote; tweak weights if you like
+# soft vote
 w_rules, w_tfidf = 0.4, 0.6
-proba = w_tfidf * proba_tfidf + w_rules * proba_rules
+proba = w_tfidf * proba_tf + w_rules * proba_ru
 pred  = proba.argmax(axis=1)
 
 # save outputs
@@ -60,17 +72,16 @@ out_preds = outputs/"preds"/"ensemble_test.csv"
 pd.DataFrame({
     "id": df.get("id", pd.Series(range(len(df)))),
     "text": df["text"],
-    "label": df["label"] if "label" in df else pd.Series([None]*len(df)),
+    "label": df.get("label"),
     "pred": pred
 }).to_csv(out_preds, index=False)
 
 # metrics if labels available
-metrics = {}
 if "label" in df.columns:
     report = classification_report(df["label"], pred, output_dict=True, zero_division=0)
-    metrics = report
     (outputs/"metrics"/"ensemble_test.json").write_text(json.dumps(report, indent=2))
+    print(f"[ensemble] macro-F1: {report['macro avg']['f1-score']:.3f}")
+else:
+    print("[ensemble] no labels found; wrote predictions only.")
 
 print(f"[ensemble] wrote predictions -> {out_preds}")
-if metrics:
-    print(f"[ensemble] macro-F1: {metrics['macro avg']['f1-score']:.3f}")
