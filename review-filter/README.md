@@ -17,6 +17,6 @@ Reproduce:
     python src/07_eval.py
     python src/08_demo_infer.py --model ensemble --text "sample"
 
-Team roles (if any).
+Team roles:
 
-Limitations & Next steps.
+Limitations & Next steps:
