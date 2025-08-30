@@ -32,7 +32,7 @@ Prerequisites
 
 3. Set up and launch FastAPI backend:
 
-  python -m venv venv
+   python -m venv venv
 
 # On Windows:
 venv\Scripts\activate
