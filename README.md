@@ -41,9 +41,11 @@ Prerequisites
          source venv/bin/activate
 
    pip install --upgrade pip
+   
    pip install -r requirements.txt
 
    Place trained TF-IDF model at: models/tfidf_lr/model.joblib
+   
    Place DistilBERT transformer files in: models/distilbert/
 
    Start the backend server:
@@ -52,14 +54,13 @@ Prerequisites
 
       Visit http://127.0.0.1:8000/docs to check the API is live.
 
-3. Set up and start React frontend
+4. Set up and start React frontend
 
+   npx create-react-app review-ui
 
-npx create-react-app review-ui
+   cd review-ui
 
-cd review-ui
-
-npm install
+   npm install
 
 Replace review-ui/src/App.js with:
 
