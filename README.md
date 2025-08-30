@@ -1,6 +1,6 @@
 Review Category Classifier is a web app that classifies google location reviews using an ensemble model of rule-based logic, TF-IDF, and Hugging Face's DistilBERT model. 
 
-Features
+# Features
 
 -Web UI for easy review submission and classification
 
@@ -12,7 +12,7 @@ Features
 
 
 
-Prerequisites
+# Prerequisites
 
 -Python 3.8+
 
@@ -22,7 +22,7 @@ Prerequisites
 
 
 
-🚀 Quickstart
+# Quickstart
 
 1. Clone the repository:
 
@@ -67,13 +67,13 @@ Prerequisites
    Go to http://localhost:3000 in your browser.
 
 
-In the web app: 
+# In the web app: 
 
 1. Enter a review (e.g., The food was great and service prompt!) and click Classify
 
 2. See predicted category, ID, and confidence score
 
-Troubleshooting
+# Troubleshooting
 
 "npm error missing script: start" ->	cd review-ui before running npm start
 
@@ -86,7 +86,7 @@ Troubleshooting
 Only "Unknown or unable to classify" ->	Backend might not be using models/rules ensemble
 
 
-Deployment
+# Deployment
 
 Frontend:
 In review-ui/, build for production:
