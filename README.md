@@ -86,20 +86,6 @@ Review Category Classifier is a web app that classifies google location reviews 
 Only "Unknown or unable to classify" ->	Backend might not be using models/rules ensemble
 
 
-# Deployment
-
-Frontend:
-In review-ui/, build for production:
-npm run build
-Deploy /build with Netlify, Vercel, or GitHub Pages.
-
-Backend:
-Host FastAPI with Render, Railway, or a cloud VM.
-
-Update API URL in React (App.js) to match your backend.
-
-Example Input
-"The food was delicious and the staff were friendly!"
 
 Credits
 Built with FastAPI & React
