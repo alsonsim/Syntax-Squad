@@ -10,6 +10,8 @@ Features
 
 -Ready for local and cloud deployment
 
+
+
 Prerequisites
 
 -Python 3.8+
@@ -18,17 +20,19 @@ Prerequisites
 
 -git (to clone repository)
 
+
+
 🚀 Quickstart
 
 1. Clone the repository
 
-git clone https://github.com/YOUR-USERNAME/Syntax-Squad.git
+  git clone https://github.com/YOUR-USERNAME/Syntax-Squad.git
 
-cd Syntax-Squad/review-filter
+  cd Syntax-Squad/review-filter
 
 2. Set up and launch FastAPI backend
 
-python -m venv venv
+  python -m venv venv
 
 # On Windows:
 venv\Scripts\activate
