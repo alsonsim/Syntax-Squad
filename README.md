@@ -54,7 +54,7 @@ Prerequisites
 
       Visit http://127.0.0.1:8000/docs to check the API is live.
 
-4. Set up and start React frontend
+3. Set up and start React frontend
 
    npx create-react-app review-ui
 
@@ -62,26 +62,29 @@ Prerequisites
 
    npm install
 
-Replace review-ui/src/App.js with:
+   npm start
+   
+   Go to http://localhost:3000 in your browser.
 
-Start your frontend:
 
-npm start
-Go to http://localhost:3000 in your browser.
+In the web app: 
 
-Usage
-1. Start both FastAPI (step 2) and React (step 3)
+1. Enter a review (e.g., The food was great and service prompt!) and click Classify
 
-2. Enter a review (e.g., The food was great and service prompt!) and click Classify
-
-3. See predicted category, ID, and confidence score
+2. See predicted category, ID, and confidence score
 
 Troubleshooting
+
 "npm error missing script: start" ->	cd review-ui before running npm start
+
 'react-scripts' not recognized ->	Run npm install in review-ui
+
 "error connecting to the server" ->	Ensure FastAPI backend running and URL matches
+
 "ModuleNotFoundError" on backend ->	Match import statement & filename
+
 Only "Unknown or unable to classify" ->	Backend might not be using models/rules ensemble
+
 
 Deployment
 
