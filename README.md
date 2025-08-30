@@ -1,5 +1,4 @@
-Review Category Classifier
-A web app that classifies reviews using an ensemble of rule-based logic, TF-IDF, and Transformers (DistilBERT) with a FastAPI backend and React frontend.
+Review Category Classifier is a web app that classifies google location reviews using an ensemble model of rule-based logic, TF-IDF, and Hugging Face's DistilBERT model. 
 
 Features
 -Web UI for easy review submission and classification
