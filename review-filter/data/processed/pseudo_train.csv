@@ -1,1 +1,41 @@
 id,text,label,confidence
+1101,Best pizza in town! Order now at www.pizzapromo.com,1,0.8836318537291273
+1102,Follow @CafeDelight on Instagram for daily deals and free vouchers!,1,0.9179887624459466
+1103,"Limited time offer: Buy 1 get 1 free coffee, use code SAVE10.",1,0.831502018912617
+1105,"My phone screen broke yesterday, so frustrating.",2,0.8713840732083591
+1107,The iOS update ruined my battery life,2,0.9034871689123037
+1109,"Never been here, but my friend said it's awful",3,0.9011521242377274
+1111,"Didn't go inside, but from the outside it looks terrible.",3,0.8863740883322534
+10001,Best pizza in town! Order now at www.pizzapromo.com and get 20% off.,1,0.8936085247559755
+10002,Follow @CafeDelight on Instagram for daily deals and free vouchers!,1,0.9179887624459466
+10003,"Limited time offer: Buy 1 get 1 free coffee, use code SAVE10.",1,0.831502018912617
+10005,Huge SALE today! Visit www.shoplocal.com for discounts.,1,0.9063867632775408
+10006,"My phone screen broke yesterday, so frustrating.",2,0.8713840732083591
+10008,The iOS update ruined my battery life.,2,0.9034871689123037
+10010,"GPU drivers are buggy, nothing to do with this restaurant.",2,0.8594027120548273
+10011,"Never been here, but my friend said it's awful.",3,0.9011521242377274
+10013,"Didn't go inside, but from the outside it looks terrible.",3,0.8863740883322534
+20001,Best pizza in town! Order now at www.pizzapromo.com and get 20% off.,1,0.8936085247559755
+20002,Follow @CafeDelight on Instagram for daily deals and free vouchers!,1,0.9179887624459466
+20003,"Limited time offer: Buy 1 get 1 free coffee, use code SAVE10.",1,0.831502018912617
+20005,Huge SALE today! Visit www.shoplocal.com for discounts.,1,0.9063867632775408
+20007,Don't miss our promo! www.burgerhouse.com/discount,1,0.8463706060582075
+20009,Advert: Tasty Meals now delivers! Order at www.tastymeals.com,1,0.8458987745755691
+20011,Click here to win a free dinner for two www.winbig.com,1,0.8515154652294553
+20017,Visit www.eatcheap.com for special offers in your city.,1,0.8412315887792898
+20020,New opening! Follow our Facebook page for discounts.,1,0.8270969143684264
+20021,"My phone screen broke yesterday, so frustrating.",2,0.8713840732083591
+20023,The iOS update ruined my battery life.,2,0.9034871689123037
+20025,"GPU drivers are buggy, nothing to do with this restaurant.",2,0.8594027120548273
+20041,"Never been here, but my friend said it's awful.",3,0.9011521242377274
+20043,"Didn't go inside, but from the outside it looks terrible.",3,0.8863740883322534
+20058,"Didn't go, but read a blog post calling it awful.",3,0.8341258399831846
+20059,"Never been, but I imagine the food is bland.",3,0.8314886296789747
+30002,Huge discount on all orders this weekend at www.foodcorner.com!,1,0.8365172496814202
+30004,"Never been to this cafe, but heard it's lovely from friends.",3,0.8112247192804765
+30006,Sign up now for free membership at www.restaurantdeals.com!,1,0.9193454282850352
+30038,Limited seats left! Book your table now at www.reservations.com!,1,0.8049136936685264
+30052,Never been here but heard it's worth a visit.,3,0.8552271433904823
+30072,"Never been inside, but heard the desserts are fantastic.",3,0.8429896312960704
+40038,Sign up for free swag and discounts on our site!,1,0.8508441097656216
+40200,Never been here but it’s highly rated.,3,0.8291007172968647
