@@ -1,15 +1,17 @@
 Review Category Classifier is a web app that classifies google location reviews using an ensemble model of rule-based logic, TF-IDF, and Hugging Face's DistilBERT model. 
 
 Features
+
 -Web UI for easy review submission and classification
 
 -FastAPI backend (Python) with modular, extensible ML logic
 
--Combines rules, classic ML, and deep learning for robust predictions
+-Combines classic ML and deep learning for robust predictions
 
 -Ready for local and cloud deployment
 
 Prerequisites
+
 -Python 3.8+
 
 -Node.js 16+ (with npm)
@@ -17,6 +19,7 @@ Prerequisites
 -git (to clone repository)
 
 🚀 Quickstart
+
 1. Clone the repository
 git clone https://github.com/YOUR-USERNAME/Syntax-Squad.git
 cd Syntax-Squad/review-filter
