@@ -21,11 +21,13 @@ Prerequisites
 🚀 Quickstart
 
 1. Clone the repository
+
 git clone https://github.com/YOUR-USERNAME/Syntax-Squad.git
+
 cd Syntax-Squad/review-filter
 
 2. Set up and launch FastAPI backend
-text
+
 python -m venv venv
 
 # On Windows:
@@ -41,12 +43,18 @@ Place trained TF-IDF model at: models/tfidf_lr/model.joblib
 Place DistilBERT transformer files in: models/distilbert/
 
 Start the backend server:
+
 uvicorn src.app:app --reload
+
 Visit http://127.0.0.1:8000/docs to check the API is live.
 
 3. Set up and start React frontend
+
+
 npx create-react-app review-ui
+
 cd review-ui
+
 npm install
 
 Replace review-ui/src/App.js with:
