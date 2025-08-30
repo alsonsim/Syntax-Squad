@@ -30,27 +30,27 @@ Prerequisites
 
    cd Syntax-Squad/review-filter
 
-3. Set up and launch FastAPI backend:
+2. Set up and launch FastAPI backend:
 
    python -m venv venv
 
-# On Windows:
-venv\Scripts\activate
+   On Windows:
+         venv\Scripts\activate
 
-# On Mac/Linux:
-source venv/bin/activate
+   On Mac/Linux:
+         source venv/bin/activate
 
-pip install --upgrade pip
-pip install -r requirements.txt
+   pip install --upgrade pip
+   pip install -r requirements.txt
 
-Place trained TF-IDF model at: models/tfidf_lr/model.joblib
-Place DistilBERT transformer files in: models/distilbert/
+   Place trained TF-IDF model at: models/tfidf_lr/model.joblib
+   Place DistilBERT transformer files in: models/distilbert/
 
-Start the backend server:
+   Start the backend server:
 
-uvicorn src.app:app --reload
+      uvicorn src.app:app --reload
 
-Visit http://127.0.0.1:8000/docs to check the API is live.
+      Visit http://127.0.0.1:8000/docs to check the API is live.
 
 3. Set up and start React frontend
 
