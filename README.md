@@ -24,13 +24,13 @@ Prerequisites
 
 🚀 Quickstart
 
-1. Clone the repository
+1. Clone the repository:
 
-  git clone https://github.com/YOUR-USERNAME/Syntax-Squad.git
+   git clone https://github.com/YOUR-USERNAME/Syntax-Squad.git
 
-  cd Syntax-Squad/review-filter
+   cd Syntax-Squad/review-filter
 
-2. Set up and launch FastAPI backend
+3. Set up and launch FastAPI backend:
 
   python -m venv venv
 
