@@ -165,4 +165,4 @@ Example Input
 
 Credits
 Built with FastAPI & React
-Developed by [Jian Wei]
+Developed by [Syntax Squad]
