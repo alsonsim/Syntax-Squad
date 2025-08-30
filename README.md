@@ -1,15 +1,10 @@
 Review Category Classifier is a web app that classifies google location reviews using an ensemble model of rule-based logic, TF-IDF, and Hugging Face's DistilBERT model. 
 
-Name
-Role
-ALSON SIM
-Model Development & Implementation
-YEO JIAN WEI
-Model Training & User Interface Integration
-CHANG YI HERNG
-Model Fine-Tuning & Optimisation
-MARCUS YEO
-System Testing & Review
+Name | Role
+ALSON SIM | Model Development & Implementation
+YEO JIAN WEI | Model Training & User Interface Integration
+CHANG YI HERNG | Model Fine-Tuning & Optimisation
+MARCUS YEO | System Testing & Review
 
 
 # Features
