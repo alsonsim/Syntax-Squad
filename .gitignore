@@ -1,0 +1,15 @@
+# models & checkpoints
+review-filter/models/
+**/runs/
+**/checkpoints/
+*.pt
+*.bin
+*.safetensors
+
+# outputs
+review-filter/outputs/
+outputs/
+
+# env & caches
+.venv/
+**/__pycache__/ 
